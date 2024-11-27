@@ -1,4 +1,4 @@
-const BASE_URL: string = "https://api.themoviedb.org/3/";
+export const BASE_URL: string = "https://api.themoviedb.org/3/";
 
 const TMDB_TOKEN: string = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDU2Mzg4N2ZjZDJlZThiNmJhZGU1MGIxNDNhYTQwMyIsInN1YiI6IjY1NDBlZjk3NDU1N2EwMTBhM2RiOThlZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.caIG98AZSSLTJf3PmBJ4HalhUs0bwTwn1QZTokAjgz0";
 
@@ -29,7 +29,6 @@ export const fetchDataFromApi = async (url: string, options: any) => {
         ...options,
         headers : headers
     };
-    console.log(opts,'opts')
     try {
         const res = await fetch(BASE_URL + url, opts);
         const data = await res.json();

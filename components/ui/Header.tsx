@@ -48,7 +48,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 20,
         backgroundColor : 'rgba(0, 0, 0, .25)',
-        zIndex : 100
+        zIndex : 100,
+        position : 'absolute',
+        width : '100%'
     },
     textInput : {
         backgroundColor : 'white',
