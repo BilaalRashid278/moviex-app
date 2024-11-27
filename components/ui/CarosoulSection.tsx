@@ -33,7 +33,7 @@ const CarosoulSection = ({ title, types = [] }: { title: string, types : {title?
                 <View style={styles.types}>
                     {types?.map((t: any, i: number) => (
                         <TouchableOpacity onPress={() => setActiveType(i)} key={i}>
-                            <View style={{ backgroundColor: activeType === i ? "orange" : "", width: 100, height: "100%", borderRadius: 20, flexDirection: 'row', justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
+                            <View style={{ backgroundColor: activeType === i ? "#FF8540" : "", width: 100, height: "100%", borderRadius: 20, flexDirection: 'row', justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
                                 <Text style={{ textAlign: 'center', color: activeType === i ? "white" : 'black' }}>{t?.title}</Text>
                             </View>
                         </TouchableOpacity>
